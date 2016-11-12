@@ -40,7 +40,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#"><i class="fa fa-user-circle fa-lg " aria-hidden="true"></i></a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle"data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acciones <span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acciones <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a data-toggle="modal" data-target="#modal-form-registration" href="#"><i class="fa fa-user-plus " aria-hidden="true"></i> Ingresar Alumno</a></li>
@@ -89,22 +89,23 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title">Formulario de Registro</h4>
                     </div><!-- /.modal-header -->
-                    <div class="modal-body">
-                        <form id="formulario-registro" name="formularioRegistro" action="" method="post" role="form">
-                            <div class="form-group">
-                                <label for="nform-ingresoame">Nombre</label>
-                                <input type="text" name="nombre" class="form-control" id="name" placeholder="Nombre">
-                            </div>
-                            <div class="form-group">
-                                <label for="second_name">Apellido</label>
-                                <input type="text" name="apellido" class="form-control" id="second_name" placeholder="Apellido">
-                            </div>
-                    </div><!-- /.modal-body -->
-                    <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                            <button type="submit" class="btn btn-primary">Ingresar Alumno</button>
-                        </form><!-- Form Registration -->
-                    </div><!-- /.modal-footer -->
+                    <form id="formulario-registro" name="formularioRegistro" action="" method="" role="form">
+                        <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" name="nombre" class="form-control" id="name" placeholder="Nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label for="second_name">Apellido</label>
+                                    <input type="text" name="apellido" class="form-control" id="second_name" placeholder="Apellido">
+                                </div>
+                        </div><!-- /.modal-body -->
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-primary">Ingresar</button>
+
+                        </div><!-- /.modal-footer -->
+                    </form><!-- Form Registration -->
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
@@ -113,20 +114,8 @@
         <footer class="container-fluid">
             <p><a href="#">&copy; 2016 Proyecto Copyright</a></p>
         </footer>
-        <!-- Firebase -->
+        <!-- Firebase Api-->
         <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
-        <!-- Initialize Firebase >
-        <script>
-            // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyDpXnzjfjIhmd43nUbV_DOZH4hWqLxM-wQ",
-                authDomain: "escuela-p1.firebaseapp.com",
-                databaseURL: "https://escuela-p1.firebaseio.com",
-                storageBucket: "escuela-p1.appspot.com",
-                messagingSenderId: "1038538624822"
-            };
-            firebase.initializeApp(config);
-        </script> -->
         <!-- jQuery first, then Bootstrap JS. -->
         <script src="js/jquery.min.2.1.4.js"></script>
         <!-- jQuery CDN -->
@@ -139,7 +128,7 @@
         <!--
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         -->
-        <!-- JavaScript Custom -->
+        <!-- School Api -->
         <script type="text/javascript" src="js/school_api.js"></script>
         <!-- JavaScript Custom -->
         <script type="text/javascript" src="js/app.js"></script>
